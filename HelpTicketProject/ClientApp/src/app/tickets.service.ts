@@ -9,6 +9,7 @@ import { Ticket } from './ticket';
 export class TicketsService {
 
   baseURL:string ="";
+  baseControllerRoute:string = "api/Tickets"
   constructor(private http:HttpClient, @Inject ("BASE_URL") private url:string) 
   { 
     this.baseURL = url;
@@ -16,6 +17,6 @@ export class TicketsService {
 
   GetAllTickets():Observable<Ticket[]>
   {
-    return this.http.get<Ticket[]>(this.baseURL);
+    return this.http.get<Ticket[]>(this.baseURL + this.baseControllerRoute);
   }
 }

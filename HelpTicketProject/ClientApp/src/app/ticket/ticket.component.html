@@ -1,1 +1,18 @@
 <p>ticket works!</p>
+
+<label for="nameForm">Login</label>
+<input type="text" ngModel = "username" id="nameForm">
+
+<!-- <button (click)="Login()">Login</button> -->
+
+<button (click)="GetAllTickets()">Click to get Tickets</button>
+
+<div *ngFor="let t of tickets">
+    <p>Ticket ID: {{t.id}}</p>
+    <p>Name: {{t.name}}</p>
+    <p>Email: {{t.email}}</p>
+    <p>Issue: {{t.ticketIssue}}</p>
+    <p>Details: {{t.ticketDetails}}</p>
+    <p>Resolved by: {{t.resolvedBy}}</p>
+    <br>
+</div>
