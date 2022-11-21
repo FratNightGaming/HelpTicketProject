@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { FavoriteComponent } from './favorite/favorite.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TicketComponent } from './ticket/ticket.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    TicketComponent
+    TicketComponent,
+    FavoriteComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -28,7 +32,9 @@ import { TicketComponent } from './ticket/ticket.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'Ticket', component: TicketComponent }
+      { path: 'Ticket', component: TicketComponent },
+      { path: 'Favorite', component: FavoriteComponent},
+      { path: 'User', component: UserComponent}
     ])
   ],
   providers: [],
