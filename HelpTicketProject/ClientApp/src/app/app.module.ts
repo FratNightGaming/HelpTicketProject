@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserComponent } from './user/user.component';
     FetchDataComponent,
     TicketComponent,
     FavoriteComponent,
-    UserComponent
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -34,7 +36,8 @@ import { UserComponent } from './user/user.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'Ticket', component: TicketComponent },
       { path: 'Favorite', component: FavoriteComponent},
-      { path: 'User', component: UserComponent}
+      { path: 'User', component: UserComponent},
+      { path: 'Login', component: LoginComponent}
     ])
   ],
   providers: [],

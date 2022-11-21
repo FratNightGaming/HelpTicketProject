@@ -15,7 +15,6 @@ export class TicketComponent implements OnInit {
   }
 
   username: string = "";
-
   tickets:Ticket[] = [];
   ticketToDisplay:Ticket = {} as Ticket;
 

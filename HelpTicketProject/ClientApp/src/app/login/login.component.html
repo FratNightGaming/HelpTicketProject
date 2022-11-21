@@ -1,0 +1,20 @@
+
+
+<label for="registerForm">Create User</label>
+<input type="text" [(ngModel)] = "newusername" id ="registerForm">
+<button (click)="Register()">Create User</button><span *ngIf ="!loginExists">Username already exists.</span><br><br>
+
+<label for="loginForm">Login</label>
+<input type="text" [(ngModel)] = "username" id="loginForm">
+<button (click)="Login()">Login</button><br><br>
+
+<div *ngIf ="nameNotFound">
+    <p>Username not recognized.</p>
+</div>
+
+
+<div *ngFor="let user of allUsers; index as i;">
+    <p>User Name:{{user.userName}}</p><br>    
+</div>
+
+
