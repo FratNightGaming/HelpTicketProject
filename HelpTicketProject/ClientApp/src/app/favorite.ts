@@ -5,4 +5,6 @@ export interface Favorite {
     ticketId: number;
     ticket:   null;
     user:     null;
+
+    //id and ticket
 }

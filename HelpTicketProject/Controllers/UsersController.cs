@@ -78,9 +78,15 @@ namespace HelpTicketProject.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+            user.Id = null;
+
+            if (_context.Users.Where(u => u.UserName == user.UserName).Any())
+            {
+                return NoContent();
+            }    
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }
 
