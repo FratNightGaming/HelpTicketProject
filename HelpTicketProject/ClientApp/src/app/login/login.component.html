@@ -1,5 +1,4 @@
 
-
 <label for="registerForm">Create User</label>
 <input type="text" [(ngModel)] = "newusername" id ="registerForm">
 <button (click)="Register()">Create User</button><span *ngIf ="!loginExists">Username already exists.</span><br><br>
@@ -12,6 +11,11 @@
     <p>Username not recognized.</p>
 </div>
 
+<!-- <app-ticket *ngIf="displayFavorites" [currentUser]="currentUser"></app-ticket> -->
+
+
+
+<!--Get rid of later: for testing-->
 
 <div *ngFor="let user of allUsers; index as i;">
     <p>User Name:{{user.userName}}</p><br>    

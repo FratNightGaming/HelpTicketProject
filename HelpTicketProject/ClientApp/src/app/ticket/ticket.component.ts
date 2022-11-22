@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TicketsService } from '../tickets.service';
 import { Ticket } from '../ticket.js';
+import { FavoritesService } from '../favorites.service';
+import { User as User } from 'oidc-client';
 
 @Component({
   selector: 'app-ticket',
@@ -9,34 +11,58 @@ import { Ticket } from '../ticket.js';
 })
 export class TicketComponent implements OnInit {
 
-  constructor(private ticketAPI:TicketsService) 
+  constructor(private ticketAPI:TicketsService, private favAPI: FavoritesService) 
   {
 
   }
 
-  username: string = "";
+  showForm: boolean = false;
+  @Input() currentUser: User = {} as User;
   tickets:Ticket[] = [];
   ticketToDisplay:Ticket = {} as Ticket;
-
+  favorite: Ticket = {} as Ticket;
+  favoriteTickets: Ticket[] = [];
+ 
   ngOnInit(): void {
   }
 
   GetAllTickets():void
   {
-    this.ticketAPI.GetAllTickets().subscribe((t:Ticket[]) => 
+    this.ticketAPI.GetAllTickets().subscribe((results:Ticket[]) => 
     {
-      this.tickets = t;
-      console.log(t)
+      this.tickets = results;
+      console.log(results);
     });
   }
 
-  // GetAllTickets():void
-  // {
-  //   this.ticketAPI.GetAllTickets().subscribe((t:Ticket[]) => 
-  //   {
-  //     this.tickets = t;
-  //     console.log(t)
-  //   });
-  // }
+  DeleteTicket(i: number):void
+  {
+   
+   this.ticketAPI.DeleteTicket(i).subscribe((result: Ticket) =>
+   {
+      console.log(result);
+   })
+
+  }
+  
+  AddToFavorite(index: number):void
+  {
+    
+  }
+
+  GetTicketDetails(i: number):void
+  {
+    
+   this.tickets[i].canDisplay = !this.tickets[i].canDisplay;
+        
+  }
+
+  DisplayForm():void{
+  this.showForm = !this.showForm;
+  }
+
+
+
+
 
 }
