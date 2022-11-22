@@ -1,14 +1,25 @@
 <p>ticket works!</p>
 <!-- Create a router for login here:-->
 
-<button (click)="GetAllTickets()">Click to get Tickets</button>
+<button (click)="GetAllTickets()">Click to view Tickets</button>
+<button (click)="DisplayForm()">Create A Ticket:</button>
 
-<div *ngFor="let t of tickets">
+<app-add-ticket *ngIf="showForm"></app-add-ticket>
+
+<div *ngFor="let t of tickets; index as i">
     <p>Ticket ID: {{t.id}}</p>
     <p>Name: {{t.name}}</p>
-    <!-- <p>Email: {{t.email}}</p> -->
     <p>Issue: {{t.ticketIssue}}</p>
-    <!-- <p>Details: {{t.ticketDetails}}</p>
-    <p>Resolved by: {{t.resolvedBy}}</p> -->
+    <button (click)="DeleteTicket(t.id )">Delete This Ticket:</button>
+    <button (click)="GetTicketDetails(t.id)">View full details:</button>
+    <button [hidden]="currentUser != null" (click)="AddToFavorite(t.id)">Add To Favorites:</button>
+
+    <div>
+    <div *ngIf="t.canDisplay">
+        <p>Email: {{t.email}}</p>
+        <p>Details: {{t.ticketDetails}}</p>
+        <p>Resolved by: {{t.resolvedBy}}</p>
+        <br>
+    </div>
     <br>
 </div>

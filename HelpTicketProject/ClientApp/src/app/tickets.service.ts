@@ -19,4 +19,22 @@ export class TicketsService {
   {
     return this.http.get<Ticket[]>(this.baseURL + this.baseControllerRoute);
   }
+  
+  GetTicket(index : number):Observable<Ticket>
+  {
+    //Does index need to be index.ToString()?
+     return this.http.get<Ticket>(this.baseURL + this.baseControllerRoute + '/' + index);
+
+  }
+
+  AddNewTicket(ticket : Ticket):Observable<Ticket>
+  {
+    return this.http.post<Ticket>(this.baseURL + this.baseControllerRoute, ticket);
+  }
+
+  DeleteTicket(index: number):Observable<Ticket>
+  {
+    return this.http.delete<Ticket>(this.baseURL + this.baseControllerRoute + '/' + index);
+  }
+
 }
