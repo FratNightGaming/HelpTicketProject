@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FavoritesService } from '../favorites.service';
 import { Ticket } from '../ticket';
 import { TicketsService } from '../tickets.service';
 
@@ -40,6 +41,8 @@ export class FavoriteComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    
+
   }
 
 }

@@ -6,6 +6,7 @@ body{
     background-color: rgb(140, 140, 140);
     background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
     background-size: repeat;
+    background-position: center;
 }
 .nav-item{
     border: 2px solid black;
@@ -14,4 +15,5 @@ body{
     background-color: rgba(105, 198, 255, 0.907); 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 

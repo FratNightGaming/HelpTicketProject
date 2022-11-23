@@ -14,7 +14,7 @@
     border: 3px solid black;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     background-color: rgb(161, 227, 161);;
 }
 .inputBar{
@@ -28,6 +28,7 @@
     font-size: large;
     margin-right: 5px;
     background-color: rgb(186, 255, 186);
+    margin-bottom: 100px;
 }
 .button2{
     border: 10px double black;
