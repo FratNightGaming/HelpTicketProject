@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
   currentUser : User = {} as User;
   newusername : string = "";
   loginExists : boolean = true;
+  displayFavorites: boolean = false;
 
   GetUserName(user : User): void{
     this.userAPI.GetUser(user.id).subscribe((result : User) =>
@@ -48,6 +49,7 @@ export class LoginComponent implements OnInit {
         this.currentUser = this.allUsers[i];
         nameFound = true;
         this.nameNotFound = false;
+        this.displayFavorites = true;
 
       }     
     }   
@@ -56,7 +58,7 @@ export class LoginComponent implements OnInit {
         this.nameNotFound = true;
       }
   }
-
+  
   Register(): void{
     this.userAPI.AddNewUser(this.newusername).subscribe((result : User)=>
     {
@@ -66,13 +68,12 @@ export class LoginComponent implements OnInit {
       else{
         this.loginExists = true;
         this.currentUser = result;
+        this.displayFavorites = true;
       }
       console.log(result);
     });
 
    }
-
-
   ngOnInit(): void {
   }
 

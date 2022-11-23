@@ -1,20 +1,30 @@
+<div class="image">
+<header class="header">Help Desk</header>
+<p class="headline">Please login or create a new user to access tickets.</p>
+<div class="loginForm">
+<label for="registerForm" class ="login">Create User</label><br><br>
+<input type="text" [(ngModel)] = "newusername" id ="registerForm" class="inputBar">
+<button (click)="Register()" class="button">Create User</button><span *ngIf ="!loginExists">Username already exists.</span><br><br>
 
 
-<label for="registerForm">Create User</label>
-<input type="text" [(ngModel)] = "newusername" id ="registerForm">
-<button (click)="Register()">Create User</button><span *ngIf ="!loginExists">Username already exists.</span><br><br>
-
-<label for="loginForm">Login</label>
-<input type="text" [(ngModel)] = "username" id="loginForm">
-<button (click)="Login()">Login</button><br><br>
+<label for="loginForm" class ="login">Login</label><br><br>
+<input type="text" [(ngModel)] = "username" id="loginForm" class="inputBar">
+<button (click)="Login()"class="button">Login</button><br><br>
+</div>
 
 <div *ngIf ="nameNotFound">
     <p>Username not recognized.</p>
 </div>
 
+<!-- <app-ticket *ngIf="displayFavorites" [currentUser]="currentUser"></app-ticket> -->
 
+
+
+<!--Get rid of later: for testing-->
+<p class="usernames">(a list of registered usernames: )</p>
 <div *ngFor="let user of allUsers; index as i;">
     <p>User Name:{{user.userName}}</p><br>    
+</div>
 </div>
 
 
