@@ -32,3 +32,7 @@
     margin-bottom: 50px;
     background-color: rgba(106, 197, 218, 0.69);
 }
+.image{
+    background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
+    background-size: cover;
+}
