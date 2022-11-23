@@ -1,6 +1,16 @@
+import { Favorite } from "./favorite";
 
-export interface User {
+export class User {
     id:        number;
     userName:  string;
-    favorites: any[];
+    favorites: Favorite[];
+
+    constructor(){
+        this.id = 0;
+        this.userName = "";
+        this.favorites = [];
+
+    }
 }
+
+

@@ -1,1 +1,13 @@
-<p>favorite works!</p>
+<h1>List of Favorites: </h1>
+
+<button (click)="GetFavTickets(username)">Click view </button>
+
+<div *ngFor="let t of favTickets">
+    <p>Ticket ID: {{t.id}}</p>
+    <p>Name: {{t.name}}</p>
+    <p>Issue: {{t.ticketIssue}}</p>
+    <br>
+</div>
+
+
+
