@@ -44,6 +44,8 @@ export class TicketComponent implements OnInit {
    this.ticketAPI.DeleteTicket(i).subscribe((result: Ticket) =>
    {
       console.log(result);
+      // Wanted to figure out how to auto reload the page so our results show instantly.
+      // window.location.reload();
    })
 
   }

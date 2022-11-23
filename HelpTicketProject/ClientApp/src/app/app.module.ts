@@ -12,6 +12,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { AddTicketComponent } from './add-ticket/add-ticket.component';
+
 //is this because the link in under tickets??
 
 
