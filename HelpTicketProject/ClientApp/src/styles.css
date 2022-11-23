@@ -1,16 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+background-color: gray;
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+}
+body{
+    background-color: rgb(140, 140, 140);
+    background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
+    background-size: repeat;
+}
+.nav-item{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 5px;;
+    background-color: rgba(105, 198, 255, 0.907); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  color: #e01a76;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}

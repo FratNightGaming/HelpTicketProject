@@ -8,5 +8,6 @@ export interface Ticket
     ticketDetails: string;
     resolvedBy:    string;
     favorites:     any[];
+    canDisplay:    boolean;
 }
 

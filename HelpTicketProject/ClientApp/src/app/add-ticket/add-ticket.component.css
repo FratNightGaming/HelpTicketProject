@@ -1,0 +1,38 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inputBar{
+    border-radius: 15px;
+}
+.button{
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: rgb(202, 228, 250);
+}
+.ticketInfo{
+    font-size: larger;
+    font-weight: bold;
+}
+.header{
+    border: 10px double black;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgb(105, 198, 255);
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.form{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: rgba(106, 197, 218, 0.69);
+}
+.image{
+    background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
+    background-size: cover;
+}
