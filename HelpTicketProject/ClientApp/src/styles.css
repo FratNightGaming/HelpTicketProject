@@ -1,16 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+html{
+background-color: gray;
 }
-
-code {
-  color: #e01a76;
+body{
+    background-color: rgb(140, 140, 140);
 }
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.nav-item{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 5px;;
+    background-color: rgba(105, 198, 255, 0.907); 
 }

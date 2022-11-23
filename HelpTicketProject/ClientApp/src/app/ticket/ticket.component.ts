@@ -17,7 +17,7 @@ export class TicketComponent implements OnInit {
   }
 
   showForm: boolean = false;
-  @Input() currentUser: User = {} as User;
+  @Input() currentUser: number = 0;
   tickets:Ticket[] = [];
   ticketToDisplay:Ticket = {} as Ticket;
   favorite: Ticket = {} as Ticket;

@@ -1,8 +1,9 @@
+import { Favorite } from "./favorite";
 
 export class User {
     id:        number;
     userName:  string;
-    favorites: any[];
+    favorites: Favorite[];
 
     constructor(){
         this.id = 0;

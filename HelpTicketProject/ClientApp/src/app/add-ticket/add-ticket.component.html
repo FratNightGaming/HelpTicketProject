@@ -1,14 +1,15 @@
+<header class="header">Create Ticket:</header>
+<div class="form">
+<label for="userName" class="ticketInfo">UserName:</label><br><br><input type="text" [(ngModel)]="userName" id="userName" class="inputBar"><br><br>
 
-<p>Create New Ticket:</p><br><br>
-<label for="userName">UserName:</label><input type="text" [(ngModel)]="userName" id="userName"><br><br>
+<label for="email" class="ticketInfo">Email:</label><br><br><input type="text" [(ngModel)]="email" id="email" class="inputBar"><br><br>
 
-<label for="email">Email:</label><input type="text" [(ngModel)]="email" id="email"><br><br>
+<label for="ticketIssue" class="ticketInfo">Issue:</label><br><br><input type="text" [(ngModel)]="ticketIssue" id="ticketIssue" class="inputBar"><br><br>
 
-<label for="ticketIssue">Issue:</label><input type="text" [(ngModel)]="ticketIssue" id="ticketIssue"><br><br>
+<label for="ticketDetail" class="ticketInfo">Details:</label><br><br><input type="text" [(ngModel)]="ticketDetail" id="ticketDetail" class="inputBar"><br><br>
+<button (click)="AddTicket()" class="button">Add Ticket:</button>
+</div>
 
-<label for="ticketDetail">Details:</label><input type="text" [(ngModel)]="ticketDetail" id="ticketDetail" ><br><br>
-
-<button (click)="AddTicket()">Add Ticket:</button>
 
 
 
