@@ -3,8 +3,11 @@
 }
 .tixId{
     font-size: x-large;
-    font-weight: bolder;
+    font-weight:500;
     text-decoration: underline;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgb(186, 255, 186);
     
 }
 .tixDiv{
@@ -18,7 +21,7 @@
     border-radius: 15px;
 }
 .button{
-    border: 2px solid black;
+    border: 10px double black;
     border-radius: 15px; 
     padding: 5px;
     font-weight: bold;
@@ -26,10 +29,20 @@
     margin-right: 5px;
     background-color: rgb(186, 255, 186);
 }
+.button2{
+    border: 10px double black;
+    border-radius: 15px; 
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 500px;
+    background-color: rgb(186, 255, 186);
+}
 p{
     text-align: center;
     font-size: larger;
     font-weight: bold;
+   
 }
 .header{
     border: 10px double black;
@@ -40,4 +53,8 @@ p{
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;   
+}
+.image{
+    background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
+    background-size: cover;
 }

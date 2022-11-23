@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { TicketsService } from '../tickets.service';
 import { Ticket } from '../ticket.js';
 import { FavoritesService } from '../favorites.service';
-import { User as User } from 'oidc-client';
+
 
 @Component({
   selector: 'app-ticket',

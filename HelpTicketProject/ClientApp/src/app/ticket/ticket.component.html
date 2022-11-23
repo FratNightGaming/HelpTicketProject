@@ -1,4 +1,4 @@
-<!-- Create a router for login here:-->
+<div class="image"><!-- Create a router for login here:-->
 <header class="header">Welcome, Please choose from the following options:</header>
 <button (click)="GetAllTickets()" class="button">Click to view Tickets</button><br><br>
 <button (click)="DisplayForm()" class="button">Create A Ticket:</button><br><br>
@@ -18,6 +18,7 @@
     </div>
     <br>
 </div>
-    <button (click)="GetTicketDetails(t.id)" class="button">View full details:</button>
-    <button (click)="DeleteTicket(t.id )"class="button">Delete This Ticket:</button>
+    <button (click)="GetTicketDetails(t.id)" class="button">View Full Details:</button>
+    <button (click)="DeleteTicket(t.id )"class="button2">Delete This Ticket:</button>
     <button [hidden]="currentUser != null" (click)="AddToFavorite(t.id)"class="button">Add To Favorites:</button>
+</div>
