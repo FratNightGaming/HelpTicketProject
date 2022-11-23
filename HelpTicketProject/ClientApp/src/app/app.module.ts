@@ -12,6 +12,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { AddTicketComponent } from './add-ticket/add-ticket.component';
+//is this because the link in under tickets??
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'Ticket', component: TicketComponent },
-      { path: 'Favorite', component: FavoriteComponent},
+      { path: 'Favorite/:username', component: FavoriteComponent},
       { path: 'User', component: UserComponent},
       { path: 'Login', component: LoginComponent},
       { path: 'AddTicket', component: AddTicketComponent},

@@ -1,10 +1,12 @@
 html{
-background-color: gray;
+background-color: black;
 
 }
 body{
     background-color: rgb(140, 140, 140);
     background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
+    height: max-content;
+    
     background-size: repeat;
     background-position: center;
 }

@@ -16,7 +16,7 @@
     <p>Username not recognized.</p>
 </div>
 
-<!-- <app-ticket *ngIf="displayFavorites" [currentUser]="currentUser"></app-ticket> -->
+<app-ticket *ngIf="displayFavorites" [currentUser]="currentUser.id"></app-ticket>
 
 
 
@@ -26,5 +26,12 @@
     <p>User Name:{{user.userName}}</p><br>    
 </div>
 </div>
+
+
+<li class="nav-item" [routerLinkActive]="['link-active']">
+    <a class="nav-link text-dark" [routerLink]="['/Favorite',username]"
+      >Favorites</a
+    >
+  </li>
 
 

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { TicketsService } from '../tickets.service';
 import { Ticket } from '../ticket.js';
 import { FavoritesService } from '../favorites.service';
+import { Favorite } from '../favorite';
 
 
 @Component({
@@ -22,6 +23,8 @@ export class TicketComponent implements OnInit {
   ticketToDisplay:Ticket = {} as Ticket;
   favorite: Ticket = {} as Ticket;
   favoriteTickets: Ticket[] = [];
+  fav: Favorite = {} as Favorite;
+
  
   ngOnInit(): void {
   }
@@ -45,15 +48,29 @@ export class TicketComponent implements OnInit {
 
   }
   
-  AddToFavorite(index: number):void
+  AddToFavorite(id: number):void
   {
-    
+    let fav: Favorite = {id:0,ticketId:id,userId:this.currentUser,ticket:null,user:null};
+    this.favAPI.AddToFavorites(fav).subscribe((result: Favorite) =>{
+      console.log(result);
+
+    })
   }
 
-  GetTicketDetails(i: number):void
+  GetTicketDetails(id: number):void
   {
     
-   this.tickets[i].canDisplay = !this.tickets[i].canDisplay;
+   for(let i =0; i < this.tickets.length; i++){
+  
+    let t = this.tickets[i];
+  
+    if(t.id === id){
+
+      this.tickets[i].canDisplay = !this.tickets[i].canDisplay;
+      break;
+    }
+    
+   }
         
   }
 

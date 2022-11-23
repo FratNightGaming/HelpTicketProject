@@ -19,6 +19,8 @@
     <br>
 </div>
     <button (click)="GetTicketDetails(t.id)" class="button">View Full Details:</button>
+    <button  (click)="AddToFavorite(t.id)"class="button3">Add To Favorites:</button>
     <button (click)="DeleteTicket(t.id )"class="button2">Delete This Ticket:</button>
-    <button [hidden]="currentUser != null" (click)="AddToFavorite(t.id)"class="button">Add To Favorites:</button>
 </div>
+
+

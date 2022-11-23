@@ -1,6 +1,6 @@
 <h1>List of Favorites: </h1>
 
-<button (click)="GetFavTickets(username)">Click view </button>
+<button (click)="GetUserId()" class = "button">View Favorites</button>
 
 <div *ngFor="let t of favTickets">
     <p>Ticket ID: {{t.id}}</p>
@@ -8,6 +8,9 @@
     <p>Issue: {{t.ticketIssue}}</p>
     <br>
 </div>
+
+
+
 
 
 
