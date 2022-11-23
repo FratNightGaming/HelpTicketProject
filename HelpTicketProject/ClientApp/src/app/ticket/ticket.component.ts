@@ -46,7 +46,7 @@ export class TicketComponent implements OnInit {
       console.log(result);
       // Wanted to figure out how to auto reload the page so our results show instantly.
       // window.location.reload();
-   })
+   });
 
   }
   
@@ -56,7 +56,7 @@ export class TicketComponent implements OnInit {
     this.favAPI.AddToFavorites(fav).subscribe((result: Favorite) =>{
       console.log(result);
 
-    })
+    });
   }
 
   GetTicketDetails(id: number):void
