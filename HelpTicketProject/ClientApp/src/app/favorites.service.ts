@@ -21,4 +21,9 @@ export class FavoritesService {
    {
     return this.http.post<Favorite>(this.baseURL + this.baseControllerRoute, favorite);
    }
+
+   GetAllFavorites():Observable<Favorite[]>
+   {
+    return this.http.get<Favorite[]>(this.baseURL + this.baseControllerRoute);
+   }
 }

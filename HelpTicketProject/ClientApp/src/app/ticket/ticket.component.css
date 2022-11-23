@@ -14,7 +14,7 @@
     border: 3px solid black;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     background-color: rgb(161, 227, 161);;
 }
 .inputBar{
@@ -28,6 +28,7 @@
     font-size: large;
     margin-right: 5px;
     background-color: rgb(186, 255, 186);
+    margin-bottom: 100px;
 }
 .button2{
     border: 10px double black;
@@ -37,6 +38,16 @@
     font-size: large;
     margin-left: 500px;
     background-color: rgb(186, 255, 186);
+}
+.button3{
+    border: 10px double black;
+    border-radius: 15px; 
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 100px;
+    background-color: rgb(186, 255, 186);
+
 }
 p{
     text-align: center;
@@ -48,7 +59,7 @@ p{
     border: 10px double black;
     border-radius: 15px;
     padding: 30px;
-    background-color: rgb(138, 240, 142);
+    background-color: rgb(138, 240, 141);
     font-size: xx-large;
     margin-bottom: 20px;
     font-weight: bold;
@@ -57,4 +68,5 @@ p{
 .image{
     background-image: url(C:\Users\jessi\Desktop\HelpDesk.2\HelpTicketProject\HelpTicketProject\ClientApp\src\app\BG1.webp) ;
     background-size: cover;
+    
 }
