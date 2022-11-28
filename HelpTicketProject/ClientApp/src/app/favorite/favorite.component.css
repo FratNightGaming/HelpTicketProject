@@ -1,0 +1,29 @@
+
+.button{
+    border-radius: 15px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(181, 212, 255);  
+}
+p{
+    color:white
+}
+.header{
+    text-align: center;
+    color: white;
+    border: 10px double white;
+    border-radius: 15px;
+    background-color: gray;
+    
+}
+.tixDiv{
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px;
+  
+}
+.favorites{
+    border: 2px solid royalblue;
+    padding: 20px;
+}
